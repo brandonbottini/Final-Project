@@ -17,20 +17,20 @@ The following machines were identified on the network:
   -10.0.0.32:
 - Capstone
   -Ubuntu 18.04.1:
-  - **Purpose**:
-  - **IP Address**:
+  - Testing Alerts:
+  - 192.168.1.105:
 - ELK
   - Ubuntu 18.04.4:
   - Log Capture:
-  - **IP Address**:
+  - 192.168.1.100:
 - Kali
   - Kali Linux:
   - Attacker:
-  - **IP Address**:
+  - 192.168.1.90:
 - Target 1
   - Debian:
-  - **Purpose**:
-  - **IP Address**:
+  - Vuln WordPress:
+  - 192.168.1.110:
 - Target 2
   - Debian:
   - **Purpose**:
@@ -38,7 +38,7 @@ The following machines were identified on the network:
 ### Description of Targets
 _TODO: Answer the questions below._
 
-The target of this attack was: `Target 1` (TODO: IP Address).
+The target of this attack was: `192.168.1.110` (TODO: IP Address).
 
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
@@ -49,9 +49,9 @@ Traffic to these services should be carefully monitored. To this end, we have im
 #### Name of Alert 1
 _TODO: Replace `Alert 1` with the name of the alert._
 
-Alert 1 is implemented as follows:
+Excessive HTTP Errors is implemented as follows:
   - **Metric**: TODO
-  - **Threshold**: TODO
+  - WHEN count() GROUPED OVER top 5 'http,response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes: TODO
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
