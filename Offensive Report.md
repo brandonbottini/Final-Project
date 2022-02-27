@@ -12,7 +12,7 @@ TODO: Fill out the information below.
 Nmap scan results for each machine reveal the below services and OS details:
 - nmap -sV 192.168.1.110  
 
-![](Images/5.0-Target%201%20Nmap%20Scan.png)
+![](Images/Target%201%20Nmap%20Scan.png)
 
 This scan identifies the services below as potential points of entry:
 
@@ -36,7 +36,7 @@ The following vulnerabilities were identified on each target:
 
 
 
-![](Images/5.1-Word%20Press%20Scan.png)
+![](Images/Word%20Press%20Scan.png)
 
 ### Exploitation
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
@@ -44,7 +44,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 Target 1
 
 
-flag1.txt: ![](Images/6.0-Flag1%20Found.png)
+flag1.txt: ![](Images/Flag1%20Found.png)
 
 
 Exploit Used
@@ -55,7 +55,7 @@ Exploit Used
 - grep -RE flag
 
 
-flag2.txt: ![](Images/7.0-Flag2%20Found.png)
+flag2.txt: ![](Images/Flag2%20Found.png)
 
 
 Exploit Used
@@ -66,7 +66,7 @@ Exploit Used
 - ls
 - cat flag2.txt
 
-flag3.txt: 
+flag3.txt: ![](Images/Flag3.png)
 
 Exploit Used
 
@@ -78,7 +78,7 @@ Exploit Used
 - use wordpress;
 - SELECT * FROM wp_posts;
 
-flag4.txt: 
+flag4.txt: ![](Images/Flag4.png)
 
 Exploit Used
 
