@@ -56,7 +56,7 @@ HTTP Request Size Monitor is implemented as follows:
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
 
 #### Alert 3
-Alert 3 is implemented as follows:
+CPU Usage Monitor is implemented as follows:
   - **Metric**: Metricbeat
   - **Threshold**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
   - **Vulnerability Mitigated**: DDOS
