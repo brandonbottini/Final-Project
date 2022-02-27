@@ -46,7 +46,8 @@ IT was informed that some users are torrenting on the network. The Security team
 
 # Find the following information about the machine with IP address 10.0.0.201:
   - MAC address: 00:16:17:18:66:c8
-  - Windows username: 
-  - OS version
+  - Windows username: Elmer Blanco
+  - OS version: Windows NT 10.0 x64
 
 Which torrent file did the user download?
+  - Betty_Boop_on_the_reservation.avi.torrent
