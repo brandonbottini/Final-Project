@@ -11,7 +11,7 @@ Exploitation
 TODO: Fill out the information below.
 Nmap scan results for each machine reveal the below services and OS details:
 - nmap -sV 192.168.1.110
-  # 
+  # [](Images/5.0-Target%201%20Nmap%20Scan.png)
 This scan identifies the services below as potential points of entry:
 
 ### Target 1
