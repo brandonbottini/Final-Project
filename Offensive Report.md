@@ -39,7 +39,6 @@ The following vulnerabilities were identified on each target:
 ![](Images/5.1-Word%20Press%20Scan.png)
 
 ### Exploitation
-TODO: Fill out the details below. Include screenshots where possible.
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 
 Target 1
