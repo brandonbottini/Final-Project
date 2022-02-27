@@ -11,29 +11,29 @@
 
 The following machines were identified on the network:
 - ML-REFVM-684427
-  - Windows 10 Pro:
-  - Host Machine:
-  -10.0.0.32:
+  - Operating System: Windows 10 Pro
+  - Purpose: Host Machine
+  - IP Address: 192.168.1.1
 - Capstone
-  -Ubuntu 18.04.1:
-  - Testing Alerts:
-  - 192.168.1.105:
+  - Operating System: Ubuntu 18.04.1
+  - Purpose: Testing Alerts
+  - IP Address: 192.168.1.105
 - ELK
-  - Ubuntu 18.04.4:
-  - Log Capture:
-  - 192.168.1.100:
+  - Operating System: Ubuntu 18.04.4
+  - Purpose: Log Capture
+  - IP Address: 192.168.1.100
 - Kali
-  - Kali Linux:
-  - Attacker:
-  - 192.168.1.90:
+  - Operating System: Kali Linux
+  - Purpose: Attacker
+  - IP Address: 192.168.1.90
 - Target 1
-  - Debian:
-  - Vuln WordPress:
-  - 192.168.1.110:
+  - Operating System: Debian GNU/LINUX 8
+  - Purpose: Vuln WordPress
+  - IP Address: 192.168.1.110
 
 ### Description of Targets
 
-The target of this attack was: `192.168.1.110` (TODO: IP Address).
+The target of this attack was: `192.168.1.110`.
 
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
@@ -44,37 +44,20 @@ Traffic to these services should be carefully monitored. To this end, we have im
 #### Name of Alert 1
 Excessive HTTP Errors is implemented as follows:
   - **Metric**: Packetbeat
-  - **Threshold**: WHEN count() GROUPED OVER top 5 'http,response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Threshold**: WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
+  - **Vulnerability Mitigated**: Ennumeration/Brute Force
+  - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The rate of the reliability of this alert is medium or high.
 
 #### Name of Alert 2
 HTTP Request Size Monitor is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: DDOS
+  - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
 
 #### Name of Alert 3
 Alert 3 is implemented as follows:
   - **Metric**: Metricbeat
   - **Threshold**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
-
-### Suggestions for Going Further (Optional)
-_TODO_: 
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
-
-The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- Vulnerability 1
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 2
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
+  - **Vulnerability Mitigated**: DDOS
+  - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
