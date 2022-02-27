@@ -27,7 +27,12 @@ The following vulnerabilities were identified on each target:
 
 ### Target 1
 
-- List of Critical Vulnerabilities
+| Vulnerability        | Description                                                                                                                                                      | Impact                              | CVE or Standard |
+|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-----------------|
+| Port Scanning        | Use Nmap to detect open ports                                                                                                                                    | Show vulnerable ports and services. | Standard        |
+| Enumerate WordPress  | Exhibit different behavior for a failed login attempt depending on whether the user account exists, which allows remote  attackers to enumerate valid usernames. | Enumerate User Accounts             | CVE-2009-2335   |
+| Weak Password        | Using easily guess passwords                                                                                                                                     | Gain access to the machine          | Standard        |
+| Privilege Escalation | when running with Python 3.6 or later,  allows remote authenticated users to execute  arbitrary code, leading to privilege escalation.                           | Gain root access to the machine     | CVE-2020-29396  |
 
 
 
