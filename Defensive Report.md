@@ -41,21 +41,21 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-#### Name of Alert 1
+#### Alert 1
 Excessive HTTP Errors is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
   - **Vulnerability Mitigated**: Ennumeration/Brute Force
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The rate of the reliability of this alert is medium or high.
 
-#### Name of Alert 2
+#### Alert 2
 HTTP Request Size Monitor is implemented as follows:
   - **Metric**: Packetbeat
   - **Threshold**: WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute
   - **Vulnerability Mitigated**: DDOS
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
 
-#### Name of Alert 3
+#### Alert 3
 Alert 3 is implemented as follows:
   - **Metric**: Metricbeat
   - **Threshold**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
