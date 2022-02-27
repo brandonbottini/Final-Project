@@ -7,7 +7,7 @@ Critical Vulnerabilities
 Exploitation
 
 
-Exposed Services
+### Exposed Services
 TODO: Fill out the information below.
 Nmap scan results for each machine reveal the below services and OS details:
 $ nmap ... # TODO: Add command to Scan Target 1
@@ -25,9 +25,7 @@ The following vulnerabilities were identified on each target:
 
 ### Target 1
 
--List of
--Critical
--Vulnerabilities
+- List of Critical Vulnerabilities
 
 
 
@@ -45,8 +43,8 @@ flag1.txt: TODO: Insert flag1.txt hash value
 
 Exploit Used
 
-TODO: Identify the exploit used
-TODO: Include the command run
+- TODO: Identify the exploit used
+- TODO: Include the command run
 
 
 
@@ -57,5 +55,5 @@ flag2.txt: TODO: Insert flag2.txt hash value
 
 Exploit Used
 
-TODO: Identify the exploit used
-TODO: Include the command run
+- TODO: Identify the exploit used
+- TODO: Include the command run
