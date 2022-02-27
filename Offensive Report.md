@@ -31,7 +31,7 @@ The following vulnerabilities were identified on each target:
 
 
 
-TODO: Include vulnerability scan results to prove the identified vulnerabilities.
+![](Images/5.1-Word%20Press%20Scan.png)
 
 ### Exploitation
 TODO: Fill out the details below. Include screenshots where possible.
