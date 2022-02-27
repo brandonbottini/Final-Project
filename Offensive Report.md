@@ -18,11 +18,11 @@ This scan identifies the services below as potential points of entry:
 
 ### Target 1
 
-- List of Exposed Services
+- SSH
+- HTTP
+- RPCBIND
+- NETBIOS-SSN
 
-
-
-TODO: Fill out the list below. Include severity, and CVE numbers, if possible.
 The following vulnerabilities were identified on each target:
 
 ### Target 1
@@ -40,7 +40,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 Target 1
 
 
-flag1.txt: TODO: Insert flag1.txt hash value
+flag1.txt: ![](Images/6.0-Flag1%20Found.png)
 
 
 Exploit Used
@@ -50,9 +50,7 @@ Exploit Used
 
 
 
-
-
-flag2.txt: TODO: Insert flag2.txt hash value
+flag2.txt: ![](Images/7.0-Flag2%20Found.png)
 
 
 Exploit Used
