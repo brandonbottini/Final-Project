@@ -73,7 +73,7 @@ Exploit Used
 - Weak password
 - ssh michael@192.168.1.110
 - mysql -u root -p
-- R@v3enSecurity
+- R@v3nSecurity
 - use wordpress;
 - SELECT * FROM wp_posts;
 
