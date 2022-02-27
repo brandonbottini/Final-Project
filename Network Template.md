@@ -44,7 +44,7 @@ IT was informed that some users are torrenting on the network. The Security team
 - The DC is associated with the domain dogoftheyear.net.
 - Your task is to isolate torrent traffic and answer the following questions:
 
-# Find the following information about the machine with IP address 10.0.0.201:
+### Find the following information about the machine with IP address 10.0.0.201:
   - MAC address: 00:16:17:18:66:c8
   - Windows username: Elmer Blanco
   - OS version: Windows NT 10.0 x64
