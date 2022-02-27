@@ -44,9 +44,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 Target 1
 
 
-flag1.txt: 
-
-![](Images/Flag1%20Found.png)
+flag1.txt: ![](Images/Flag1%20Found.png)
 
 
 Exploit Used
@@ -79,7 +77,10 @@ Exploit Used
 - use wordpress;
 - SELECT * FROM wp_posts;
 
-flag4.txt: ![](Images/Flag4.png)
+flag4.txt: 
+
+
+![](Images/Flag4.png)
 
 Exploit Used
 
