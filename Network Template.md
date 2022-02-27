@@ -1,4 +1,5 @@
-### Network Analysis
+# Network Analysis
+
 ## Time Thieves
 At least two users on the network have been wasting time on YouTube. Usually, IT wouldn't pay much mind to this behavior, but it seems these people have created their own web server on the corporate network. So far, Security knows the following about these time thieves:
 - They have set up an Active Directory network.
@@ -25,7 +26,7 @@ The Security team received reports of an infected Windows host on the network. T
 - The network has standard gateway and broadcast addresses.
 - Inspect your traffic to answer the following questions:
 
-Find the following information about the infected Windows machine:
+### Find the following information about the infected Windows machine:
 - Host name: Rotterdam-PC.mind-hammer.net
 - IP address: 172.16.4.205
 - MAC address: 00:59:07:b0:63:a4
