@@ -50,4 +50,4 @@ IT was informed that some users are torrenting on the network. The Security team
   - OS version: Windows NT 10.0 x64
 
 Which torrent file did the user download?
-  - Betty_Boop_on_the_reservation.avi.torrent
+- Betty_Boop_on_the_reservation.avi.torrent
