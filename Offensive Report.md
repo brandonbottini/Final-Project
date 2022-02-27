@@ -72,7 +72,6 @@ Exploit Used
 
 - Weak password
 - ssh michael@192.168.1.110
-- cd /var/www/html/wordpress
 - mysql -u root -p
 - R@v3enSecurity
 - use wordpress;
