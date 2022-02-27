@@ -8,7 +8,6 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
 
 The following machines were identified on the network:
 - ML-REFVM-684427
@@ -31,12 +30,8 @@ The following machines were identified on the network:
   - Debian:
   - Vuln WordPress:
   - 192.168.1.110:
-- Target 2
-  - Debian:
-  - **Purpose**:
-  - **IP Address**:
+
 ### Description of Targets
-_TODO: Answer the questions below._
 
 The target of this attack was: `192.168.1.110` (TODO: IP Address).
 
