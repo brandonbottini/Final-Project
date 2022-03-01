@@ -48,6 +48,8 @@ Excessive HTTP Errors is implemented as follows:
   - **Vulnerability Mitigated**: Ennumeration/Brute Force
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The rate of the reliability of this alert is medium or high.
 
+![](Images/Excessive%20HTTP%20Error.png)
+
 #### Alert 2
 HTTP Request Size Monitor is implemented as follows:
   - **Metric**: Packetbeat
@@ -55,9 +57,13 @@ HTTP Request Size Monitor is implemented as follows:
   - **Vulnerability Mitigated**: DDOS
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
 
+![](Images/HTTP%20Request%20Size%20Monitor.png)
+
 #### Alert 3
 CPU Usage Monitor is implemented as follows:
   - **Metric**: Metricbeat
   - **Threshold**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
   - **Vulnerability Mitigated**: DDOS
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
+
+![](Images/CPU%20Usage%20Monitor.png)
