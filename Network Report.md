@@ -15,8 +15,8 @@ You must inspect your traffic capture to answer the following questions:
 - What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
   - The name of the malware downloaded to the 10.6.12.203 machine is june11.dll.
 - Upload the file to VirusTotal.com. What kind of malware is this classified as?
-  - The malware is classified as a Trojan. 
- ![](Images/June11%20dll%20file%20%20virus%20total.png)
+  - The malware is classified as a Trojan.   
+![](Images/June11%20dll%20file%20%20virus%20total.png)
  
 ## Vulnerable Windows Machines
 The Security team received reports of an infected Windows host on the network. They know the following:
@@ -32,13 +32,13 @@ The Security team received reports of an infected Windows host on the network. T
 - MAC address: 00:59:07:b0:63:a4
 
 - What is the username of the Windows user whose computer is infected?
-  - The username of the infected computer is Matthijs Devries.
-![](Images/User%20name%20of%20Infected%20Machine.png)
+  - The username of the infected computer is Matthijs Devries.  
+![](Images/User%20name%20of%20Infected%20Machine.png)  
 - What are the IP addresses used in the actual infection traffic?
-  - The IP addresses used int eh infecteion traffic are 166.62.11.64 and 185.243.115.84.
+  - The IP addresses used int eh infecteion traffic are 166.62.11.64 and 185.243.115.84.  
 ![](Images/IP%20addresses%20of%20Infected%20Machines.png)  
 As a bonus, retrieve the desktop background of the Windows host.
-![](Images/Desktop%20windows%20HostBackround.png)
+![](Images/Desktop%20windows%20HostBackround.png)  
 ## Illegal Downloads
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
 - IT shared the following about the torrent activity:
@@ -51,8 +51,8 @@ IT was informed that some users are torrenting on the network. The Security team
   - MAC address: 00:16:17:18:66:c8
   - Windows username: Elmer Blanco
   - OS version: Windows NT 10.0 x64
-![](Images/Torrent%20User%20Name.png)
-![](Images/OS%20Version%20of%20Torrent%20Computer.png)
+![](Images/Torrent%20User%20Name.png)  
+![](Images/OS%20Version%20of%20Torrent%20Computer.png)  
 
 Which torrent file did the user download?
 - Betty_Boop_on_the_reservation.avi.torrent
