@@ -49,8 +49,8 @@ IT was informed that some users are torrenting on the network. The Security team
 
 ### Find the following information about the machine with IP address 10.0.0.201:
   - MAC address: 00:16:17:18:66:c8
-  - Windows username: Elmer Blanco
-  - OS version: Windows NT 10.0 x64
+  - Windows username: Elmer Blanco  
+  - OS version: Windows NT 10.0 x64  
 ![](Images/Torrent%20User%20Name.png)  
 ![](Images/OS%20Version%20of%20Torrent%20Computer.png)  
 
