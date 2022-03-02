@@ -35,7 +35,7 @@ The Security team received reports of an infected Windows host on the network. T
   - The username of the infected computer is Matthijs Devries.  
 ![](Images/User%20name%20of%20Infected%20Machine.png)  
 - What are the IP addresses used in the actual infection traffic?
-  - The IP addresses used int eh infecteion traffic are 166.62.11.64 and 185.243.115.84.  
+  - The IP addresses used in the infected traffic are 166.62.11.64 and 185.243.115.84.  
 ![](Images/IP%20addresses%20of%20Infected%20Machines.png)  
 As a bonus, retrieve the desktop background of the Windows host.
 ![](Images/Desktop%20windows%20HostBackround.png)  
