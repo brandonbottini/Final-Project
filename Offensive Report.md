@@ -8,7 +8,6 @@ Exploitation
 
 
 ### Exposed Services
-TODO: Fill out the information below.
 Nmap scan results for each machine reveal the below services and OS details:
 - nmap -sV 192.168.1.110  
 
