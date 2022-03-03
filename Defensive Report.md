@@ -28,7 +28,7 @@ The following machines were identified on the network:
   - IP Address: 192.168.1.90
 - Target 1
   - Operating System: Debian GNU/Linux 8
-  - Purpose: Vuln WordPress
+  - Purpose: Vulnerable WordPress
   - IP Address: 192.168.1.110
 
 ### Description of Targets
