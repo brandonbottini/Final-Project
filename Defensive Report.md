@@ -43,8 +43,8 @@ Traffic to these services should be carefully monitored. To this end, we have im
 
 #### Alert 1
 Excessive HTTP Errors is implemented as follows:
-  - **Metric**: Packetbeat
-  - **Threshold**: WHEN count() GROUPED OVER top 5 'http.response.status_code' IS ABOVE 400 FOR THE LAST 5 minutes
+  - **Metric**: WHEN count() GROUPED OVER top 5 'http.response.status_code' 
+  - **Threshold**: IS ABOVE 400 FOR THE LAST 5 minutes
   - **Vulnerability Mitigated**: Ennumeration/Brute Force
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The rate of the reliability of this alert is medium or high.
 
@@ -52,8 +52,8 @@ Excessive HTTP Errors is implemented as follows:
 
 #### Alert 2
 HTTP Request Size Monitor is implemented as follows:
-  - **Metric**: Packetbeat
-  - **Threshold**: WHEN sum() of http.request.bytes OVER all documents IS ABOVE 3500 FOR THE LAST 1 minute
+  - **Metric**: WHEN sum() of http.request.bytes OVER all documents
+  - **Threshold**: IS ABOVE 3500 FOR THE LAST 1 minute
   - **Vulnerability Mitigated**: DDOS
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
 
@@ -61,8 +61,8 @@ HTTP Request Size Monitor is implemented as follows:
 
 #### Alert 3
 CPU Usage Monitor is implemented as follows:
-  - **Metric**: Metricbeat
-  - **Threshold**: WHEN max() OF system.process.cpu.total.pct OVER all documents IS ABOVE 0.5 FOR THE LAST 5 minutes
+  - **Metric**: WHEN max() OF system.process.cpu.total.pct OVER all documents 
+  - **Threshold**: IS ABOVE 0.5 FOR THE LAST 5 minutes
   - **Vulnerability Mitigated**: DDOS
   - **Reliability**: This alert doesn't generates a lots of false positives/false negatives. The reliability of this alert is high.
 
